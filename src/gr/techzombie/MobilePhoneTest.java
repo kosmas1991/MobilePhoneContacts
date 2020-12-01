@@ -16,9 +16,9 @@ public class MobilePhoneTest {
         MobilePhone mobilePhone = new MobilePhone();
         boolean stop = false;
         mobilePhone.printInfo();
-        while (!stop){
-        int choice = input.nextInt();
-        input.nextLine();
+        while (!stop) {
+            int choice = input.nextInt();
+            input.nextLine();
             switch (choice) {
                 case 1 -> mobilePhone.printInfo();
                 case 2 -> mobilePhone.addContact();
@@ -27,7 +27,6 @@ public class MobilePhoneTest {
                 //case 5 -> stop = false;
             }
             //test yy
-        }//commited only
-
+        }//committed only 44444444}
     }
 }
