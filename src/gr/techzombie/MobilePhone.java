@@ -18,12 +18,12 @@ public class MobilePhone {
     public MobilePhone() {
     }
 
-    Contacts contacts;
+    //Contacts contacts;
 
     ArrayList<Contacts> epafes = new ArrayList<>();
 
     public void printInfo (){
-        System.out.printf("\n1. show info\n2. add contact\n3. show all contacts\n4. exit\n");
+        System.out.print("\n1. show info\n2. add contact\n3. show all contacts\n4. exit\n");
     }
     public void addContact(){
         System.out.println("dwse name:");
@@ -35,8 +35,8 @@ public class MobilePhone {
         printInfo();
     }
     public void showContacts(){
-        for (int i=0;i< epafes.size();i++)
-            System.out.println(epafes.get(i).getName() + " " + epafes.get(i).getNumber());
+        for (Contacts epafe : epafes)
+            System.out.println(epafe.getName() + " " + epafe.getNumber());
             printInfo();
     }
 }

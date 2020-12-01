@@ -19,19 +19,14 @@ public class MobilePhoneTest {
         while (!stop){
         int choice = input.nextInt();
         input.nextLine();
-        switch (choice) {
-            case 1:
-                mobilePhone.printInfo();
-                break;
-            case 2:
-                mobilePhone.addContact();
-                break;
-            case 3:
-                mobilePhone.showContacts();
-                break;
-            case 4:
-                stop=true;
-        }
+            switch (choice) {
+                case 1 -> mobilePhone.printInfo();
+                case 2 -> mobilePhone.addContact();
+                case 3 -> mobilePhone.showContacts();
+                case 4 -> stop = true;
+                //case 5 -> stop = false;
+            }
+            //test
         }
 
     }
